@@ -179,8 +179,36 @@ width: 45%;
     
     
 }
+/* extra section */
+.extra-section{
+    width: 80%;
+    margin: auto;
+}
 
-/* .foote */
+
+.extra-items{
+   
+    display: grid;
+    grid-template-columns: row;
+    margin-bottom: 100px;
+}
+
+.extra-item{
+    display:flex;
+    box-shadow: 1px 2px 6px 2px #000000;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.img img{
+    padding: 10px;
+    
+} 
+
+.content h2{
+    color: #383838;
+}
+/* .footer */
 
 footer{
     width: 400px;
@@ -215,4 +243,40 @@ footer img{
 footer h5{
   margin-left: 140px;
   color: #6C6C6C;
+}
+
+
+/* ...............
+     medis query 
+..................*/
+@media only screen and (max-width:668px){
+    .nav-item ul{
+        display: inline;
+        
+    }
+    .banner-section{
+        display: inline;
+        width: 50%;
+    }
+
+    .players{
+        grid-template-columns: 1fr;
+    }
+
+    .hilight-sectioin{
+        display: inline;
+        
+    }
+    .hilight-content, .hiligllht-img{
+        margin-left: 70px;
+        margin-top: 10px;
+    }
+}
+@media only screen  and (min-width:668px) and (max-width:992px){
+    .banner-img{
+        margin-top: 80px;
+    }
+    .players{
+        grid-template-columns:1fr 1fr;
+    }
 }
